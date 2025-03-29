@@ -197,7 +197,7 @@ function App() {
               </p>
             </div>
             <div className="blog-card">
-              <h3>Getting along as a 23 year old in Bangalore</h3>
+              <h3>Getting along with finance and psychology</h3>
               <p>
                 I will write about my interests in finance and psychology here. Coming soon.
               </p>
