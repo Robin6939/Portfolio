@@ -146,9 +146,26 @@ function App() {
         <section>
           <h2>What I am currently up to</h2>
           <div className="current-card">
-            I am currently working on building a portfolio website using React and
-            TypeScript. I am also learning about web development and trying to
-            improve my skills in this field.
+            <br />
+            <p>
+            I graduated from BITS Pilani with a degree in Computer Science about a year ago and currently work as a Software Developer at Walmart. 
+            I specialize in the pharmacy domain, where our team handles prescription processing across Walmart’s services. 
+            Our backend is built with Java and Spring Boot, and I have a deep understanding of the entire software development lifecycle (SDLC). 
+            I’m passionate about building robust and scalable systems.
+            </p>
+            <br />
+            <p>
+            Beyond my work at Walmart, I’m collaborating with Adam Retter, the founder of Evolved Binary, on developing a query parser for ElementalDB, their flagship database product.
+            I have a strong interest in databases, memory management, and computer networking, and I’m constantly diving deeper into these areas. 
+            I love exploring how systems work at a low level and optimizing them for performance and scalability.
+            When I get time, I also contribute to open-source database projects, further expanding my expertise in this space.
+            </p>
+            <br />
+            <p>
+            During my second and third years of college, I taught Computer Science and Data Structures & Algorithms (DSA), which was my primary source of income at the time. 
+            In my fourth year, I attempted to co-found an AI startup with a friend, but it didn't take off as we had hoped—an experience that taught me a lot about startups and product development.
+            I’m also a competitive programmer and occasionally participate in contests. I hold the Expert rating on Codeforces and enjoy solving complex algorithmic problems.
+            </p>
           </div>
         </section>
 
@@ -157,21 +174,21 @@ function App() {
           <h2>Blogs</h2>
           <div className="blog-grid">
             <div className="blog-card">
-              <h3>Getting Started with React</h3>
+              <h3>Getting along as a 23 year old in Bangalore</h3>
               <p>
-                Learn the basics of React and how to create your first component.
+                I will write about my experiences and learnings here. Coming soon.
               </p>
             </div>
             <div className="blog-card">
-              <h3>TypeScript for Beginners</h3>
+              <h3>Getting along as a self taught programmer</h3>
               <p>
-                A comprehensive guide to understanding TypeScript and its benefits.
+                I will write about computer science core stuff here. Coming soon.
               </p>
             </div>
             <div className="blog-card">
-              <h3>CSS Grid Layout</h3>
+              <h3>Getting along as a 23 year old in Bangalore</h3>
               <p>
-                Master CSS Grid and create responsive layouts with ease.
+                I will write about my interests in finance and psychology here. Coming soon.
               </p>
             </div>
           </div>
