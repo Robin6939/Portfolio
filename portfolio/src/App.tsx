@@ -69,8 +69,8 @@ function App() {
             />
             <div className="header-text">
               <h1>Robin Raj</h1>
-              <div className="role">Software Engineer</div>
-              <div className="location">Based in India</div>
+              <div className="role">Software Engineer, Walmart</div>
+              <div className="location">Based in Bangalore, India</div>
             </div>
           </div>
         </div>
