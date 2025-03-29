@@ -485,3 +485,42 @@ section:hover {
     padding: 1rem;
   }
 }
+
+/* Modern heading styles */
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--black);
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+}
+
+/* Contact section heading specific style */
+.contact-section h2 {
+  text-align: left;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 60px;
+  height: 3px;
+  background: var(--black);
+  transition: width 0.3s ease;
+}
+
+/* Contact section heading underline specific style */
+.contact-section h2::after {
+  left: 0;
+  transform: none;
+}
+
+h2:hover::after {
+  width: 100px;
+}

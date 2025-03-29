@@ -40,13 +40,14 @@ function App() {
 
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_dkih2vk', // Replace with your EmailJS service ID
+        'template_7ffd6rf', // Replace with your EmailJS template ID
         {
+          name: 'Anonymous',
           to_email: 'robinraj6939@gmail.com',
           message: message,
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'fnvnpbQ9pcbqFikZR' // Replace with your EmailJS public key
       )
       setSendStatus('success')
       setMessage('')
@@ -157,7 +158,6 @@ function App() {
         <section>
           <h2>What I am currently up to</h2>
           <div className="current-card">
-            <br />
             <p>
             I graduated from BITS Pilani with a degree in Computer Science about a year ago and currently work as a Software Developer at Walmart. 
             I specialize in the pharmacy domain, where our team handles prescription processing across Walmart's services. 
