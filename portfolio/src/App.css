@@ -289,6 +289,21 @@ section.visible {
   box-shadow: var(--shadow-sm);
   cursor: pointer;
   font-size: 0.95rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
 }
 
 .blog-card.visible {
@@ -302,6 +317,32 @@ section.visible {
 .blog-card:hover {
   transform: scale(1.2);
   box-shadow: var(--shadow-md);
+}
+
+.blog-card:hover::before {
+  opacity: 0.02;
+}
+
+.blog-card:hover h3 {
+  transform: translateX(5px);
+  color: var(--grey-700);
+}
+
+.blog-card:hover p {
+  transform: translateX(5px);
+  color: var(--grey-600);
+}
+
+.blog-card h3 {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.blog-card p {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 /* Enhanced hover effects */
