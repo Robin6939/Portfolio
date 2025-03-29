@@ -351,47 +351,6 @@ section:hover {
   box-shadow: var(--shadow-xl);
 }
 
-.current-card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: var(--shadow-xl);
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 1rem;
-  }
-
-  .profile-container {
-    flex-direction: column;
-    text-align: center;
-    gap: var(--spacing-unit);
-  }
-
-  .profile-pic {
-    width: 200px;
-    height: 200px;
-  }
-
-  .header-text h1 {
-    font-size: 3.5rem;
-  }
-
-  .header-text h1::after {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-  }
-
-  .role, .location {
-    font-size: 1.2rem;
-  }
-
-  .main-content {
-    padding: 1rem;
-  }
-}
-
 .anonymous-message-section h3 {
   font-family: var(--font-heading);
   font-size: 1.4rem;
@@ -489,4 +448,40 @@ section:hover {
   background-color: var(--grey-100);
   color: var(--black);
   border: 1px solid var(--grey-300);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 1rem;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-unit);
+  }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .header-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-text h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+  }
+
+  .role, .location {
+    font-size: 1.2rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
 }
