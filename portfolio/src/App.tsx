@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react'
+import { useState, FormEvent, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import './App.css'
 import profileImage from './assets/profile.jpg'
@@ -7,6 +7,29 @@ function App() {
   const [message, setMessage] = useState('')
   const [isSending, setIsSending] = useState(false)
   const [sendStatus, setSendStatus] = useState<'success' | 'error' | null>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '50px'
+      }
+    )
+
+    // Observe all sections and cards
+    document.querySelectorAll('section, .contact-link, .blog-card, .current-card, .anonymous-message-section').forEach((el) => {
+      observer.observe(el)
+    })
+
+    return () => observer.disconnect()
+  }, [])
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
@@ -54,7 +77,8 @@ function App() {
       </section>
 
       <div className="main-content">
-        <section>
+        {/* Contact Section */}
+        <section className="contact-section">
           <h2>Contact me</h2>
           <div className="contact-links">
             <a href="mailto:robinraj6939@gmail.com" className="contact-link">
@@ -74,9 +98,52 @@ function App() {
               </svg>
               LinkedIn
             </a>
+            <a href="https://twitter.com/robinraj6939" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6.115 5.19l.002 2.047a7.537 7.537 0 01-5.9 2.045l-.002-1.947a5.54 5.54 0 003.9-1.145z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M.115 5.19A5.54 5.54 0 014 4.05a7.516 7.516 0 013.9 1.15l.002 2.047a7.537 7.537 0 01-5.9 2.045l-.002-1.947z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M.115 5.19A5.54 5.54 0 014 4.05a7.516 7.516 0 013.9 1.15l.002 2.047a7.537 7.537 0 01-5.9 2.045l-.002-1.947z" />
+              </svg>
+              Twitter
+            </a>
+            <a href="https://instagram.com/robinraj6939" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 2.25c.317 0 .63.037.926.108.302.072.591.187.856.33.265.144.505.315.715.514.21.199.388.423.533.67.145.247.256.514.332.797.076.283.116.576.116.87 0 .294-.04.587-.116.87-.076.283-.187.55-.332.797-.145.247-.323.471-.533.67-.21.199-.45.37-.715.514-.265.144-.554.258-.856.33-.296.071-.609.108-.926.108-.317 0-.63-.037-.926-.108-.302-.072-.591-.187-.856-.33-.265-.144-.505-.315-.715-.514-.21-.199-.388-.423-.533-.67-.145-.247-.256-.514-.332-.797-.076-.283-.116-.576-.116-.87 0-.294.04-.587.116-.87.076-.283.187-.55.332-.797.145-.247.323-.471.533-.67.21-.199.45-.37.715-.514.265-.144.554-.258.856-.33.296-.071.609-.108.926-.108z" />
+              </svg>
+              Instagram
+            </a>
+          </div>
+
+          <div className="anonymous-message-section">
+            <h3>Send me an anonymous message</h3>
+            <form onSubmit={handleSubmit} className="message-form">
+              <textarea
+                className="message-input"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Write your message here..."
+                required
+                disabled={isSending}
+              />
+              <button
+                type="submit"
+                className="send-button"
+                disabled={isSending || !message.trim()}
+              >
+                {isSending ? "Sending..." : "Send Message"}
+              </button>
+              {sendStatus && (
+                <div className={`status-message ${sendStatus}`}>
+                  {sendStatus === "success"
+                    ? "Message sent successfully!"
+                    : "Failed to send message. Please try again."}
+                </div>
+              )}
+            </form>
           </div>
         </section>
 
+        {/* Current Status Section */}
         <section>
           <h2>What I am currently up to</h2>
           <div className="current-card">
@@ -86,6 +153,7 @@ function App() {
           </div>
         </section>
 
+        {/* Blogs Section */}
         <section>
           <h2>Blogs</h2>
           <div className="blog-grid">
@@ -108,34 +176,6 @@ function App() {
               </p>
             </div>
           </div>
-        </section>
-
-        <section className="anonymous-message-section">
-          <h3>Send me an anonymous message</h3>
-          <form onSubmit={handleSubmit} className="message-form">
-            <textarea
-              className="message-input"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Write your message here..."
-              required
-              disabled={isSending}
-            />
-            <button
-              type="submit"
-              className="send-button"
-              disabled={isSending || !message.trim()}
-            >
-              {isSending ? "Sending..." : "Send Message"}
-            </button>
-            {sendStatus && (
-              <div className={`status-message ${sendStatus}`}>
-                {sendStatus === 'success'
-                  ? 'Message sent successfully!'
-                  : 'Failed to send message. Please try again.'}
-              </div>
-            )}
-          </form>
         </section>
       </div>
     </div>
