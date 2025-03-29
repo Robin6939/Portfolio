@@ -89,7 +89,7 @@ function App() {
               Email
             </a>
             <a
-              href="https://www.linkedin.com/in/robin-raj-6939/"
+              href="https://www.linkedin.com/in/robin-raj-aa3448206/"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
@@ -99,13 +99,13 @@ function App() {
               </svg>
               LinkedIn
             </a>
-            <a href="https://twitter.com/robinraj6939" target="_blank" rel="noopener noreferrer" className="contact-link">
+            <a href="https://x.com/raj0968G" target="_blank" rel="noopener noreferrer" className="contact-link">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg>
               Twitter
             </a>
-            <a href="https://instagram.com/robinraj6939" target="_blank" rel="noopener noreferrer" className="contact-link">
+            <a href="https://www.instagram.com/robin._.yourheart/" target="_blank" rel="noopener noreferrer" className="contact-link">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.012-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
               </svg>
@@ -149,22 +149,22 @@ function App() {
             <br />
             <p>
             I graduated from BITS Pilani with a degree in Computer Science about a year ago and currently work as a Software Developer at Walmart. 
-            I specialize in the pharmacy domain, where our team handles prescription processing across Walmart’s services. 
+            I specialize in the pharmacy domain, where our team handles prescription processing across Walmart's services. 
             Our backend is built with Java and Spring Boot, and I have a deep understanding of the entire software development lifecycle (SDLC). 
-            I’m passionate about building robust and scalable systems.
+            I'm passionate about building robust and scalable systems.
             </p>
             <br />
             <p>
-            Beyond my work at Walmart, I’m collaborating with Adam Retter, the founder of Evolved Binary, on developing a query parser for ElementalDB, their flagship database product.
-            I have a strong interest in databases, memory management, and computer networking, and I’m constantly diving deeper into these areas. 
+            Beyond my work at Walmart, I'm collaborating with Adam Retter, the founder of Evolved Binary, on developing a query parser for ElementalDB, their flagship database product.
+            I have a strong interest in databases, memory management, and computer networking, and I'm constantly diving deeper into these areas. 
             I love exploring how systems work at a low level and optimizing them for performance and scalability.
             When I get time, I also contribute to open-source database projects, further expanding my expertise in this space.
             </p>
             <br />
             <p>
-            During my second and third years of college, I taught Computer Science and Data Structures & Algorithms (DSA), which was my primary source of income at the time. 
+            During my second and third years of college, I taught Computer Science and Data Structures & Algorithms (DSA) across various startups, which was my primary source of income at the time. 
             In my fourth year, I attempted to co-found an AI startup with a friend, but it didn't take off as we had hoped—an experience that taught me a lot about startups and product development.
-            I’m also a competitive programmer and occasionally participate in contests. I hold the Expert rating on Codeforces and enjoy solving complex algorithmic problems.
+            I'm also a competitive programmer and occasionally participate in contests. I currently hold the Expert rating on Codeforces and enjoy solving complex algorithmic problems.
             </p>
           </div>
         </section>
