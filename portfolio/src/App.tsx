@@ -120,7 +120,7 @@ function App() {
                 className="message-input"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Write your message here..."
+                placeholder="Send a hi!"
                 required
                 disabled={isSending}
               />
